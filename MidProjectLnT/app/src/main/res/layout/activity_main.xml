@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="275dp"
+        android:hint="Username"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        android:layout_below="@+id/editUsername"
+        />
+
+    <Button
+        android:id="@+id/editButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPassword"
+         />
+
+    <TextView
+        android:id="@+id/editNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="125dp"
+        android:text="Click here to Register!"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/editButtonLogin"
+        android:clickable="true"
+        android:onClick="perform_action"
+        >
+<!--        android:layout_toLeftOf="@id/editButtonRegister"-->
+    </TextView>
+
+<!--    <Button-->
+<!--        android:id="@+id/editButtonRegister"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Register Here!"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_below="@id/editButtonLogin"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_view"-->
+<!--        android:text="A clickable text view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="75sp"-->
+<!--        android:clickable="true"-->
+<!--        android:onClick="perform_action"-->
+<!--        />-->
+
+
+</RelativeLayout>
